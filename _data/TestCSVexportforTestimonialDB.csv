@@ -1,0 +1,5 @@
+Review,ClientFullName,ClientDisplayName,BusinessName,Postcode,Town,CalculateDistanceFromCambridge,DistanceFromCambridge,DistanceFromCambridgeSaved,CalculateDistanceFromOxford,DistanceFromOxford,DistanceFromOxfordSaved,Tags
+"""Such amazing service from Great Solar Ltd team!""",Paddy McBride,Paddy M.,,OX1 1HP,Oxford,#ERROR!,#ERROR!,021,#ERROR!,#ERROR!,001,SolarEdge Inverter#LG Panels#Commercial
+"""My panels are generating tons of electricity!""",John Smith,John S.,,OX4 2JY,Oxford,#ERROR!,#ERROR!,020,#ERROR!,#ERROR!,002,SolarEdge Inverter#Trina Panels#Residential
+"""I love photosynthesis!  Or wait, is that something different?  What is a bandgap, anyway?  Whatever, Great Solar Ltd is amazing, my solar system has saved my business thousands of pounds.""",Frida Friedan,Frida F.,MK Manufacturers Ltd,MK9 2BE,Milton Keynes,75835,0075835,010,#ERROR!,#ERROR!,010,SolarEdge Inverter#REC Panels#Commercial
+"""I now live off grid, thank you Great Solar Ltd.""",Peter Maloney,Peter M.,,CB4 3SE,Cambridge,4510,0004510,001,133191,0133191,020,SolaX Inverter#LG Panels#Residential

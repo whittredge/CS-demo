@@ -1,0 +1,25 @@
+---
+layout: post
+title: SolarEdge Testimonials
+category: Technology
+---
+
+Here are testimonials from clients with SolarEdge inverters:
+
+{% assign testimonials = site.data.TestCSVexportforTestimonialDB %}
+
+<ul>
+	{% for testimonial in testimonials %}
+		{% if testimonial.Tags contains "SolarEdge Inverter" %}
+		<p>
+			{{ testimonial.Review }}
+			<br>
+			<strong>&mdash;{{ testimonial.ClientDisplayName }}, {{ testimonial.Town }}</strong>
+			{% assign tags = testimonial.Tags | split: "#" %}
+			{% for tag in tags %}
+			  {{ tag }}
+			{% endfor %}
+		{% endif %}
+	</p>
+	{% endfor %}
+</ul>

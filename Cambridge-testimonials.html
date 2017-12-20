@@ -1,0 +1,24 @@
+---
+layout: post
+title: Cambridge Testimonials
+location: Cambridge
+category: Location
+---
+
+Here are testimonials sorted in order of proximity to Cambridge:
+
+{% assign sorted_testimonials = site.data.TestCSVexportforTestimonialDB | sort: 'DistanceFromCambridgeSaved' %}
+
+<ul>
+	{% for testimonial in sorted_testimonials %}
+	<p>
+		{{ testimonial.Review }}
+		<br>
+		<strong>&mdash;{{ testimonial.ClientDisplayName }}, {{ testimonial.Town }}</strong>
+		{% assign tags = testimonial.Tags | split: "#" %}
+		{% for tag in tags %}
+		  {{ tag }}
+		{% endfor %}
+	</p>
+	{% endfor %}
+</ul>
