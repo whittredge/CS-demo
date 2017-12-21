@@ -1,11 +1,11 @@
 ---
 layout: post
-title: SolarEdge Testimonials
+title: SolaX Testimonials
 category: Technology
 ---
 <div class="container">
 	<p>
-		Here are testimonials from clients with SolarEdge inverters:
+		Here are testimonials from clients with SolaX inverters:
 	</p>
 
 	{% assign testimonials = site.data.TestCSVexportforTestimonialDB %}
@@ -13,7 +13,7 @@ category: Technology
 
 	<ul>
 		{% for testimonial in testimonials %}
-			{% if testimonial.Tags contains "SolarEdge Inverter" %}
+			{% if testimonial.Tags contains "SolaX Inverter" %}
 			<p>
 				{{ testimonial.Review }}
 				<br>

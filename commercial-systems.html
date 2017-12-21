@@ -1,7 +1,48 @@
 ---
+title: Commercial PV Systems
 layout: default
 ---
 
 <p>
-	Commercial solar PV systems.
+	Great Solar Ltd has experience designing and building solar systems for a range of commercial clients.
 </p>
+
+<p>
+	Here are some testimonials from our commercial clients:
+
+		{% assign testimonials = site.data.TestCSVexportforTestimonialDB %}
+
+	<ul>
+		{% for testimonial in testimonials %}
+			{% if testimonial.Tags contains "Commercial" %}
+			<p>
+				{{ testimonial.Review }}
+				<br>
+				<strong>&mdash;{{ testimonial.ClientDisplayName }}, {{ testimonial.Town }}</strong>
+				{% assign tags = testimonial.Tags | split: "#" %}
+				{% for tag in tags %}
+					{% if tag contains "LG" %}
+					  	[<a href="/LG-testimonials">{{ tag }}</a>]
+					{% elsif tag contains "SolarEdge" %}
+					  	[<a href="/SolarEdge-testimonials">{{ tag }}</a>]
+					{% elsif tag contains "Commercial" %}
+					  	[<a href="/commercial-systems">{{ tag }}</a>]
+					{% elsif tag contains "Residential" %}
+					  	[<a href="/residential-systems">{{ tag }}</a>]
+				  	{% elsif tag contains "Trina" %}
+				  	  	[<a href="/Trina-testimonials">{{ tag }}</a>]
+				  	{% elsif tag contains "REC" %}
+				  	  	[<a href="/REC-testimonials">{{ tag }}</a>]
+			  	  	{% elsif tag contains "SolaX" %}
+			  	  	  	[<a href="/SolaX-testimonials">{{ tag }}</a>]
+				 	{% else %}
+				 	 	[{{ tag }}]
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+		</p>
+		{% endfor %}
+	</ul>
+
+</p>
+

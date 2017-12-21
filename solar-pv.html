@@ -1,7 +1,17 @@
 ---
 layout: default
+title: Solar PV
 ---
 
 <p>
-	Solar PV systems.
+	Here at Great Solar Ltd, we are experts at designing high-quality solar energy systems for any use case, need, or site.
+</p>
+
+<p>
+	Here are some of the technologies that we use to build our solar energy systems:
+	{% for page in site.pages %}
+		{% if page.category == "Technology" %}
+	  		<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+		{% endif %}
+	{% endfor %}
 </p>
