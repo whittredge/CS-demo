@@ -2,4 +2,15 @@
 # Header needed for main files
 ---
 
+.navbar-brand {
+	font-family: serif, Georgia;
+	.Great {
+		color: #000;
+	}
+	.Solar {
+		color: #FD9827;
+	}
+}
+
 @import "variables";
+
