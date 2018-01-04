@@ -19,26 +19,7 @@ layout: default
 				{{ testimonial.Review }}
 				<br>
 				<strong>&mdash;{{ testimonial.ClientDisplayName }}, {{ testimonial.Town }}</strong>
-				{% assign tags = testimonial.Tags | split: "#" %}
-				{% for tag in tags %}
-					{% if tag contains "LG" %}
-					  	[<a href="/LG-testimonials">{{ tag }}</a>]
-					{% elsif tag contains "SolarEdge" %}
-					  	[<a href="/SolarEdge-testimonials">{{ tag }}</a>]
-					{% elsif tag contains "Commercial" %}
-					  	[<a href="/commercial-systems">{{ tag }}</a>]
-					{% elsif tag contains "Residential" %}
-					  	[<a href="/residential-systems">{{ tag }}</a>]
-				  	{% elsif tag contains "Trina" %}
-				  	  	[<a href="/Trina-testimonials">{{ tag }}</a>]
-				  	{% elsif tag contains "REC" %}
-				  	  	[<a href="/REC-testimonials">{{ tag }}</a>]
-			  	  	{% elsif tag contains "SolaX" %}
-			  	  	  	[<a href="/SolaX-testimonials">{{ tag }}</a>]
-				 	{% else %}
-				 	 	[{{ tag }}]
-					{% endif %}
-				{% endfor %}
+				{% include tag-links.html %}
 			{% endif %}
 		</p>
 		{% endfor %}
