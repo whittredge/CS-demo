@@ -29,10 +29,20 @@ markdown: kramdown
 # theme: minima
 plugins:
   - jekyll-feed
+
+page_gen:
+  - index_files: false
+    data: 'generator-test'
+    template: 'generator'
+    name: 'location'
+    dir: 'locations'
+    # extension: <<extension used to generate the filename>>
+    # filter: <<property to filter data records by>>
 sass:
   load_paths:
     - _sass
     - node_modules
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
