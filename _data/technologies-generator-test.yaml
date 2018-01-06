@@ -1,0 +1,8 @@
+- technology: REC solar panels
+  type: solar panel
+
+- technology: LG solar panels
+  type: solar panel
+
+- technology: SolarEdge inverter
+  type: inverter

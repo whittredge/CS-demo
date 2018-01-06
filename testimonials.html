@@ -4,13 +4,13 @@ layout: default
 Locations:
 {% for page in site.pages %}
 	{% if page.category == "Location" %}
-  		<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+  		<h4><a href="{{ page.url }}">{{ page.title }}</a></h4>
 	{% endif %}
 {% endfor %}
 
 Technologies:
 {% for page in site.pages %}
 	{% if page.category == "Technology" %}
-  		<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+  		<h4><a href="{{ page.url }}">{{ page.title }}</a></h4>
 	{% endif %}
 {% endfor %}

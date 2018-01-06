@@ -1,0 +1,7 @@
+- location: Oxford
+  google-maps-location: Oxford, UK
+  sort-column-name: 'DistanceFromOxfordSaved'
+
+- location: Cambridge
+  google-maps-location: Cambridge, UK
+  sort-column-name: 'DistanceFromCambridgeSaved'

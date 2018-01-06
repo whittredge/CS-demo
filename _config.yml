@@ -32,10 +32,17 @@ plugins:
 
 page_gen:
   - index_files: false
-    data: 'generator-test'
-    template: 'generator'
+    data: 'locations-generator-test'
+    template: 'location-generator'
     name: 'location'
     dir: 'locations'
+    # extension: <<extension used to generate the filename>>
+    # filter: <<property to filter data records by>>
+  - index_files: false
+    data: 'technologies-generator-test'
+    template: 'technology-generator'
+    name: 'technology'
+    dir: 'technologies'
     # extension: <<extension used to generate the filename>>
     # filter: <<property to filter data records by>>
 sass:
