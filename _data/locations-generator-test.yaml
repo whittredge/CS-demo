@@ -5,3 +5,8 @@
 - location: Cambridge
   google-maps-location: Cambridge, UK
   sort-column-name: 'DistanceFromCambridgeSaved'
+
+- location: Milton Keynes
+  google-maps-location: Milton Keynes, UK
+  sort-column-name: 'none'
+  custom-phone: 01234 567 890
