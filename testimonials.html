@@ -1,16 +1,16 @@
 ---
 layout: default
 ---
-Locations:
-{% for page in site.pages %}
-	{% if page.category == "Location" %}
-  		<h4><a href="{{ page.url }}">{{ page.title }}</a></h4>
-	{% endif %}
-{% endfor %}
+<p>
+	Please browse our testimonials based on location, or technology used.
+</p>
 
-Technologies:
-{% for page in site.pages %}
-	{% if page.category == "Technology" %}
-  		<h4><a href="{{ page.url }}">{{ page.title }}</a></h4>
-	{% endif %}
-{% endfor %}
+<p>
+	Locations:
+</p>
+{% include location-pages-list.html %}
+
+<p>
+	Technologies:
+</p>
+{% include technology-pages-list.html %}

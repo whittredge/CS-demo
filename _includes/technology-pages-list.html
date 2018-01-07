@@ -1,0 +1,6 @@
+<p>
+	{% for entry in site.data.technologies-generator-test %}
+		{% assign url = entry.technology | replace: " ", "-" %}
+    	<a href="technologies/{{ url }}">{{ entry.technology}}</a> <br>
+	{% endfor %}
+</p>

@@ -1,0 +1,6 @@
+<p>
+	{% for entry in site.data.locations-generator-test %}
+		{% assign url = entry.location | replace: " ", "-" %}
+    	<a href="locations/{{ url }}">{{ entry.location}}</a> <br>
+	{% endfor %}
+</p>

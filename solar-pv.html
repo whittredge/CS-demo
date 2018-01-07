@@ -9,9 +9,5 @@ title: Solar PV
 
 <p>
 	Here are some of the technologies that we use to build our solar energy systems:
-	{% for page in site.pages %}
-		{% if page.category == "Technology" %}
-	  		<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
-		{% endif %}
-	{% endfor %}
 </p>
+{% include technology-pages-list.html %}
