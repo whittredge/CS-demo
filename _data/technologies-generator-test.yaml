@@ -1,8 +1,14 @@
-- technology: REC solar panels
+- technology: REC Solar Panels
   type: solar panel
 
-- technology: LG solar panels
+- technology: LG Solar Panels
   type: solar panel
 
-- technology: SolarEdge inverter
+- technology: Trina Solar Panels
+  type: solar panel
+
+- technology: SolarEdge Inverter
+  type: inverter
+
+- technology: SolaX Inverter
   type: inverter

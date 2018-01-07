@@ -2,19 +2,19 @@
 
 {% for tag in tags %}
 	{% if tag contains "LG" %}
-	  	[<a href="/LG-testimonials">{{ tag }}</a>]
+	  	[<a href="/technologies/LG-Solar-Panels">{{ tag }}</a>]
 	{% elsif tag contains "SolarEdge" %}
-	  	[<a href="/SolarEdge-testimonials">{{ tag }}</a>]
+	  	[<a href="/technologies/SolarEdge-Inverter">{{ tag }}</a>]
 	{% elsif tag contains "Commercial" %}
 	  	[<a href="/commercial-systems">{{ tag }}</a>]
 	{% elsif tag contains "Residential" %}
 	  	[<a href="/residential-systems">{{ tag }}</a>]
   	{% elsif tag contains "Trina" %}
-  	  	[<a href="/Trina-testimonials">{{ tag }}</a>]
+  	  	[<a href="/technologies/Trina-Solar-Panels">{{ tag }}</a>]
   	{% elsif tag contains "REC" %}
-  	  	[<a href="/REC-testimonials">{{ tag }}</a>]
+  	  	[<a href="/technologies/REC-Solar-Panels">{{ tag }}</a>]
 	{% elsif tag contains "SolaX" %}
-	  	[<a href="/SolaX-testimonials">{{ tag }}</a>]
+	  	[<a href="/technologies/SolaX-Inverter">{{ tag }}</a>]
  	{% else %}
  	 	[{{ tag }}]
 	{% endif %}

@@ -1,12 +1,12 @@
 - location: Oxford
-  google-maps-location: Oxford, UK
-  sort-column-name: 'DistanceFromOxfordSaved'
+  google_maps_location: Oxford, UK
+  sort_column_name: 'DistanceFromOxfordSaved'
 
 - location: Cambridge
-  google-maps-location: Cambridge, UK
-  sort-column-name: 'DistanceFromCambridgeSaved'
+  google_maps_location: Cambridge, UK
+  sort_column_name: 'DistanceFromCambridgeSaved'
 
 - location: Milton Keynes
-  google-maps-location: Milton Keynes, UK
-  sort-column-name: 'none'
-  custom-phone: 01234 567 890
+  google_maps_location: Milton Keynes, UK
+  sort_column_name: 'none'
+  custom_phone: 04321 999 999
