@@ -4,8 +4,10 @@
 			<div>
 				<a class="navbar-brand" href="/"><span class="Great">Great</span> <span class="Solar">Solar</span></a>
 			</div>
-			<div class="float-right">
-				<a class="navbar-link" href="#">{{ site.default_phone }}</a>
+			<div class="nav navbar-nav navbar-expand-sm navbar-right">
+			  <a href="tel:{% include custom-or-default-phone.html %}">
+			    {% include custom-or-default-phone.html %}
+			  </a>
 			</div>
 		</div>
 	</nav>
