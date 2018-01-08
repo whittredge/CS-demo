@@ -1,0 +1,39 @@
+<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+  <div class="container">
+
+    <a class="navbar-brand" href="/">
+      <span class="Great">Great</span> <span class="Solar">Solar</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/solar-pv.html">Solar PV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/commercial-systems.html">Commercial Systems</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/residential-systems.html">Residential Systems</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/testimonials.html">Testimonials</a>
+        </li>
+      </ul>
+      <div class="navbar-nav navbar-expand-sm float-right">  <!-- Right-justified navbar content. /-->
+        <li class="nav-item">
+          <a href="tel:{% include custom-or-default-phone.html %}" class="nav-link">
+            {% include custom-or-default-phone.html %}
+          </a>
+        </li>
+      </div>
+    </div>
+  </div>
+</nav>
