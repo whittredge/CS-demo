@@ -18,20 +18,33 @@
           <a class="nav-link" href="/solar-pv.html">Solar PV</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/commercial-systems.html">Commercial Systems</a>
+          <a class="nav-link" href="/commercial-systems.html">Commercial</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/residential-systems.html">Residential Systems</a>
+          <a class="nav-link" href="/residential-systems.html">Residential</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/testimonials.html">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+<!--         <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+ -->        
+        <li class="nav-item">
+          {% include contact-link-and-modal.html %}
         </li>
       </ul>
     </div>
 
     <div class="nav navbar-nav navbar-expand-sm navbar-right">
       <a href="tel:{% include custom-or-default-phone.html %}">
-        {% include custom-or-default-phone.html %}
+        <button type="button" class="btn btn-sm btn-outline-dark">
+          <i class="fas fa-phone"></i>
+          {% include custom-or-default-phone.html %}
+        </button>
       </a>
     </div>
   </div>
